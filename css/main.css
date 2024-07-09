@@ -210,7 +210,7 @@ nav ul li a:hover {
 
   position: absolute;
   bottom: 0;
-  left: 50px;
+  left: 10%;
 
 }
 
@@ -534,6 +534,7 @@ p.price{
     margin: 10px auto;
     transition: 0.2s;
   font-size: 13px;
+  transform: translateY(100%);
   }
   .our-gallery h5 , .our-gallery p {
     margin-bottom: 10px;
@@ -551,9 +552,10 @@ p.price{
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
     background-color: rgba(0, 0, 0,0.5);
     transition: 0.3s;
-    transform: translateY(100%);
+    
     text-align: center;
     padding: 20px 0 ;
   }
@@ -564,7 +566,11 @@ p.price{
     line-height: 1.2rem;
     margin: 30px 0;
   }
-.our-gallery .box:hover .layout-div{
+  .our-gallery .box:hover .layout-div
+  {
+    opacity: 1;
+  }
+.our-gallery .box:hover button {
   transform: translateY(0);
   
 }
@@ -649,11 +655,14 @@ p.price{
   transition: 0.3s;
  
 }
-
+.customer-review .review-rating
+{
+  transition: 0.3s;
+}
 .customer-review .box:hover .review-icons
 {
   overflow: visible;
-  transition: 0.3s;
+  
 }
 .customer-review .review-icons i{
   margin: 0 5px;
